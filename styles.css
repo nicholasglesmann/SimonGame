@@ -1,0 +1,192 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  overflow:hidden;
+}
+
+* {
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  margin: 80px;
+  font-size: 10rem;
+  letter-spacing: 1.5rem;
+  transform: scale(.7, 1);
+  text-shadow: 1px 1px 4px #fff;
+}
+
+h2 {
+  margin-top: 60px;
+  font-size: 3rem;
+  letter-spacing: .4rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#easy {
+  background-color: red;
+}
+
+#hard {
+  background-color: blue;
+}
+
+.simon {
+  top: 0;
+}
+
+.mainTitleContainter {
+  top: 0;
+}
+
+.gameContainer {
+  top: 300px;
+}
+
+.firstLetter {
+    animation: firstLetter 5s linear 0s infinite normal;
+}
+
+.secondLetter {
+    animation: secondLetter 5s linear 0s infinite normal;
+}
+
+.thirdLetter {
+    animation: thirdLetter 5s linear 0s infinite normal;
+}
+
+.fourthLetter {
+    animation: fourthLetter 5s linear 0s infinite normal;
+}
+
+.difficultytxt {
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.difficultybtn {
+  margin: 25px;
+  display: inline-block;
+  height: 120px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.maintitle {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+  animation: pulsingButton 5s ease-in-out -3s infinite alternate;
+}
+
+.green {
+  background-color: green;
+  animation: pulsingButton 5s ease-in-out 0s infinite normal;
+}
+
+.blue {
+  background-color: blue;
+  animation: pulsingButton 5s ease-in-out -1s infinite alternate;
+}
+
+.yellow {
+  background-color: yellow;
+  animation: pulsingButton 5s ease-in-out 1s infinite normal;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.slideUp {
+  animation: slideUp 2s linear 0s 1 normal;
+  animation-fill-mode: forwards;
+}
+
+@keyframes firstLetter {
+  0% {color: red;}
+  25% {color: blue;}
+  50% {color: green;}
+  75% {color: yellow;}
+  100% {color: red;}
+}
+
+@keyframes secondLetter {
+  0% {color: blue;}
+  25% {color: green;}
+  50% {color: yellow;}
+  75% {color: red;}
+  100% {color: blue;}
+}
+
+@keyframes thirdLetter {
+  0% {color: green;}
+  25% {color: yellow;}
+  50% {color: red;}
+  75% {color: blue;}
+  100% {color: green;}
+}
+
+@keyframes fourthLetter {
+  0% {color: yellow;}
+  25% {color: red;}
+  50% {color: blue;}
+  75% {color: green;}
+  100% {color: yellow;}
+}
+
+@keyframes pulsingButton {
+  0% {opacity: 1;}
+  50% {opacity: 0.7;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideUp {
+  0% {top: 0;}
+  100% {top: -950px;}
+}
+
+.hidden {
+  display: none;
+}
